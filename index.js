@@ -23,7 +23,8 @@ app.use(morgan("common")); // to let us know which api we hit
 app.use(cookieParser()); //as we storing refresh token inside cookie
 app.use(cors({
     credentials: true,
-    origin:"https://letssocialize.onrender.com"
+    origin: "https://letssocialize.onrender.com"
+            
 }))
 
 app.use("/auth", authRouter);
